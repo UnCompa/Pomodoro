@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/4363/4363401.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="pomodoro-container">
+        <div class="row-container clock-container">
+            <h1 id="clock">25:00</h1>
+            <div class="input-container">
+                <label for="cycles-input">Ciclos</label>
+                <input type="text" id="cycles-input" value="1">
+            </div>
+        </div>
+        <div class="row-container start-container">
+            <button id="start-button">start</button>
+        </div>
+        <div class="row-container settings-container">
+            <div class="input-container">
+                <label for="work-time">Work time</label>
+                <input type="text" id="work-time" value="25">
+            </div>
+            <div class="input-container">
+                <label for="break-time">Break time</label>
+                <input type="text" id="break-time" value="5">
+            </div>
+            <div class="input-container">
+                <label for="rest-time">Rest time</label>
+                <input type="text" id="rest-time" value="15">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+@font-face {
+    font-family: 'Digital';
+    src: url(./ds-digital/DS-DIGIT.TTF);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+
+    background: url("https://cdn.create.vista.com/api/media/medium/185624384/stock-photo-abstract-dark-background-blue-bokeh?token=");
+}
+.pomodoro-container {
+    display: flex;
+    flex-direction: column;
+    padding: .7rem;
+    width: 50%;
+    border: 3px solid white;
+    border-radius: 10px;
+    background-color: transparent;
+    box-shadow: white 0px 0px 14px;
+}
+.row-container {
+    display: flex;
+    align-items: center;
+    min-height: 50px;
+}
+.clock-container {
+    padding-top: 1.2rem;
+    justify-content: flex-end;
+}
+#clock {
+    width: 50%;
+    text-align: center;
+    font-family: 'Digital';
+    text-shadow: white 0px 0px 10px;
+    font-size: 3rem;
+    color: #fff;
+}
+.input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    text-align: center;
+}
+label {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: monospace;
+    font-weight: 600;
+    color: #fff;
+    text-shadow: white 0px 0px 10px;
+    margin-bottom: .5rem;
+}
+input {
+    padding: .3rem;
+    width: 80px;
+    font-size: 1.2rem;
+    font-family: monospace;
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid cornflowerblue;
+    text-shadow: white 0px 0px 10px;
+    color: white;
+    outline: none;
+    background-color: transparent;
+    box-shadow: cornflowerblue 0px 8px 34px -6px;
+}
+.start-container {
+    justify-content: space-evenly;
+}
+#start-button {
+    margin: 10px 0px 40px 0px;
+    padding: 12px 14px;
+    text-transform: uppercase;
+    font-family: monospace;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    border: 1px solid rgb(135, 162, 250);
+    border-radius: 5px;
+    background: #2262ff;
+    outline: none;
+    box-shadow: cornflowerblue 0px 0px 25px 0px;
+}
+#start-button:hover,
+#start-button:active {
+    box-shadow: white 0px 0px 10px -1px;
+    background: transparent;
+    border: 1px solid white;
+}
+.settings-container {
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+@media (max-width: 768px) {
+    .clock-container {
+        display: flex;
+        flex-direction: column;
+    }
+    #clock {
+        width: 100%;
+    }
+    .input-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+    }
+    .pomodoro-container {
+        display: flex;
+        flex-direction: column;
+        padding: .7rem;
+        width: 75%;
+        border: 2px solid white;
+        border-radius: 10px;
+    }
+}
